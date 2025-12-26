@@ -26,3 +26,15 @@
 - instruction bus = 4 bits
 - data bus = 16 bits
 - address bus = 16 bits
+- memory required = 2*(15*20)
+
+## CPU Developmental Components
+
+- CPU Core [ins decoder, control unit]
+  - instruction decoder -> ins bus -> counter
+  - control unit -> [adress bus || data bus || ALU || reg a || reg b]
+    - address bus -> counter
+    - data bus -> counter
+    - ALU -> reg a || reg b
+    - reg a -> everything
+    - reg b -> everything
