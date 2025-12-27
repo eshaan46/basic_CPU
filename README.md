@@ -38,3 +38,11 @@
     - ALU -> reg a || reg b
     - reg a -> everything
     - reg b -> everything
+
+## Completion Check List
+- [x] Memory
+- [] Instrucitons
+- [] ALU
+- [] counter
+- [] decoder
+- [] buses
