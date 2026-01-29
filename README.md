@@ -1,7 +1,8 @@
 # basic CPU Architecture
 
 ## Instruction set
-
+| Instruction | Values Passed | What It Does | Binary Translation |
+|-------------|---------------|--------------|--------------------| 
 | ADD | [R1 , R2 , R3] | // adds the 2 specified registers and stores the result in the third specified register | 0000 |
 | SUB | [R1 , R2 , R3] | // subtracts the 2 specified registers and stores the result in the third specified register | 0001 |
 | MUL | [R1 , R2 , R3] | // multiplies the 2 specified registers and stores the result in the third specified register | 0010 |
