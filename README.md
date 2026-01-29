@@ -5,9 +5,26 @@
 - The CPU can do basic Arthametic and Comparison
 - The CPU will have a Dedicated Graphics Driver for VGA
 - The CPU will have a minimum of 16 kb of Video memory
-- utalizing a simple counter plus a flag we enable instrucitons to be 2 cycles long
+- Utalizing a simple counter plus a flag we enable instrucitons to be 2 cycles long
+- The CPU has many flags and pointers to allow for easy development we have a interupt system that the dev can trigger for each flag 
+- some register a magic memory but some are adresses
 
-## Instruction
+## Flags & Registers
+- cannot have more than 16 registers
+|Register|Purpose|Interupt status|
+|--------|-------|---------------|
+|A|General purpose|NA|
+|B|General purpose|NA|
+|C|General purpose|NA|
+|D|General purpose|NA|
+|E|General purpose|NA|
+|F|General purpose|NA|
+|CIN|carry in|NA|
+|BIN|borrow in|NA|
+|LAD|Load address hear|NA|
+
+
+## Micro Instruction
 |Instruction|Purpose|Cycles|HEX|
 |-----------|-------|------|------|
 |Register Instructions|
@@ -31,3 +48,21 @@
 |NOP|Noghting happens for one clk cycle|1|E|
 |Halt Instructions|
 |HLT|halts the CPU from doing anything|1|F|
+
+## Assembly Language Instructions
+
+- WRT - WRT
+- STR - STR
+- ADD - ADD
+- SUB - SUB
+- MUL - MUL
+- DIV - DIV
+- MOD - MOD
+- JMP - JMP
+- CMP - CMP
+- BEQ - CMP + JEQ
+- BNE - CMP + JNE
+- BGE - CMP + JGE
+- BLE = CMP + JLE
+- NOP[val] - NOP * val
+- HLT - HLT
