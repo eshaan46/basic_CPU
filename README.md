@@ -9,8 +9,10 @@
 - The CPU has many flags and pointers to allow for easy development we have a interupt system that the dev can trigger for each flag 
 - some register a magic memory but some are adresses
 
-## Flags & Registers
+## Flags & Register
+s
 - cannot have more than 16 registers
+
 |Register|Purpose|Interupt status|
 |--------|-------|---------------|
 |A|General purpose|NA|
